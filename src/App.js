@@ -1,10 +1,13 @@
-import StyledButton, { FancyButton } from "./components/Button/Button";
+import StyledButton, {
+  FancyButton,
+  SubmitButton,
+} from "./components/Button/Button";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <StyledButton>Styled Button</StyledButton>
+      <StyledButton type="submit">Styled Button</StyledButton>
       <div>
         <br />
       </div>
@@ -14,6 +17,10 @@ function App() {
       <br />
       <div>
         <FancyButton as="a">FancyButton</FancyButton>
+      </div>
+      <br />
+      <div>
+        <SubmitButton>Submit Button</SubmitButton>
       </div>
     </div>
   );
